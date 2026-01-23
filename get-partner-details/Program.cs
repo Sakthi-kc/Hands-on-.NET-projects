@@ -1,6 +1,9 @@
 ﻿//Generate SNRF: prefix-datetime-random
 
 using get_partner_details.Services;
+using get_partner_details.Services.BusinessLogic;
+using get_partner_details.Services.Implementation;
+using get_partner_details.Services.Interfaces;
 using Microsoft.Extensions.Configuration;
 using System.Text.Json;
 

@@ -32,3 +32,4 @@ C:\Users\s.bh.chandrasekaran\Documents\course\c# net\console\get-partner-details
 C:\Users\s.bh.chandrasekaran\Documents\course\c# net\console\get-partner-details\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\s.bh.chandrasekaran\Documents\course\c# net\console\get-partner-details\bin\Debug\net10.0\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\s.bh.chandrasekaran\Documents\course\c# net\console\get-partner-details\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\console\get-partner-details\obj\Debug\net10.0\get-partner-details.sourcelink.json

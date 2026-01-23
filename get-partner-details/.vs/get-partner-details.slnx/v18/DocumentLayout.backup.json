@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\console\\get-partner-details\\services\\snrfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\snrfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\console\\get-partner-details\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\console\\get-partner-details\\services\\partnerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\partnerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\console\\get-partner-details\\services\\excelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\excelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\console\\get-partner-details\\services\\idataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\idataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\console\\get-partner-details\\services\\exceldatasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\exceldatasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\console\\get-partner-details\\services\\idatasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\idatasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\console\\get-partner-details\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,116 +14,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAADQAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-20T15:50:01.98Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IDataService.cs",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Services\\IDataService.cs",
-              "RelativeDocumentMoniker": "Services\\IDataService.cs",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Services\\IDataService.cs",
-              "RelativeToolTip": "Services\\IDataService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T13:54:04.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ExcelService.cs",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Services\\ExcelService.cs",
-              "RelativeDocumentMoniker": "Services\\ExcelService.cs",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Services\\ExcelService.cs",
-              "RelativeToolTip": "Services\\ExcelService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T16:01:08.859Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PartnerService.cs",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Services\\PartnerService.cs",
-              "RelativeDocumentMoniker": "Services\\PartnerService.cs",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Services\\PartnerService.cs",
-              "RelativeToolTip": "Services\\PartnerService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABcAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T08:57:31.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SNRFService.cs",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Services\\SNRFService.cs",
-              "RelativeDocumentMoniker": "Services\\SNRFService.cs",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Services\\SNRFService.cs",
-              "RelativeToolTip": "Services\\SNRFService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T16:01:53.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ExcelDataSource.cs",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Services\\ExcelDataSource.cs",
-              "RelativeDocumentMoniker": "Services\\ExcelDataSource.cs",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Services\\ExcelDataSource.cs",
-              "RelativeToolTip": "Services\\ExcelDataSource.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T16:42:57.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IDataSource.cs",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Services\\IDataSource.cs",
-              "RelativeDocumentMoniker": "Services\\IDataSource.cs",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\Services\\IDataSource.cs",
-              "RelativeToolTip": "Services\\IDataSource.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T16:37:46.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appSettings.json",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\appSettings.json",
-              "RelativeDocumentMoniker": "appSettings.json",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\appSettings.json",
-              "RelativeToolTip": "appSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-22T03:46:37.744Z",
-              "EditorCaption": ""
             }
           ]
         }
