@@ -8,9 +8,9 @@ namespace get_partner_details.Services
     //defines what excel file to read
     public class ExcelDataSource : IDataSource
     {
-        private readonly IDataService _excelService;
+        private readonly IExcelService _excelService;
 
-        public ExcelDataSource(IDataService excelService)
+        public ExcelDataSource(IExcelService excelService)
         {
             //creates ExcelService object, calls the constructor and assigns value
             _excelService = excelService;

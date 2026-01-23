@@ -7,7 +7,7 @@ using ClosedXML.Excel;
 namespace get_partner_details.Services
 {
     //defines how excel content is read
-    public class ExcelService : IDataService
+    public class ExcelService : IExcelService
     {
         //readonly can be assigned only once in constructor and cannot be changed
         private readonly string _filepath;

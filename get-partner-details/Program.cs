@@ -21,8 +21,8 @@ var config = new ConfigurationBuilder()
 string filePath = config["ExcelFileName"];
 
 
-//ExcelDatasource depends on contract (interface) not concrete class - loosely coupled
-IDataService excelService = new ExcelService(filePath);
+//ExcelDatasource depends on contract (interface) not concrete class - loosely coupled and DIP principle
+IExcelService excelService = new ExcelService(filePath);
 
 
 //You inject the dependency (excelService) into ExcelDataSource
