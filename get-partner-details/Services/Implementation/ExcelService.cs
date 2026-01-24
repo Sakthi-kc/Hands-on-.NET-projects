@@ -1,9 +1,9 @@
-﻿using System;
+﻿using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Office2010.ExcelAc;
+using get_partner_details.Services.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
-
-using ClosedXML.Excel;
-using get_partner_details.Services.Interfaces;
 
 namespace get_partner_details.Services.Implementation
 {
@@ -22,7 +22,7 @@ namespace get_partner_details.Services.Implementation
 
 
         //reads list of rows where each row is a list of string
-        public List<List<string>> GetPartnerData()
+        public List<Dictionary<string,string>> GetPartnerData()
         {
             //represents entire excel file
             var workBook = new XLWorkbook(_filepath);
@@ -45,7 +45,25 @@ namespace get_partner_details.Services.Implementation
                 data.Add(row);
             }
 
-            return data;
+            var headers = data[0];
+
+            var result = data
+                .Skip(1)
+                // Loop through each row from data
+                .Select(
+                    row => headers
+                    // For each header, select its value and index as {header = "", index = 0}
+                    // Each of this pair is item
+                    .Select(
+                        (header, index) => new { header, index }
+                    )
+                    // Convert to dictionary (keySelector, valueSelector)
+                    .ToDictionary(item => item.header, item => row[item.index])
+                )
+                // Collect all row dictionaries into a list
+                .ToList();
+
+            return result;
         }
     }
 }

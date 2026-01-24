@@ -6,6 +6,6 @@ namespace get_partner_details.Services.Interfaces
 {
     public interface IDataSource
     {
-        List<List<string>> GetSourceData();
+        List<Dictionary<string,string>> GetSourceData();
     }
 }

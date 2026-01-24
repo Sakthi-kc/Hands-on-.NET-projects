@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fLF7j6RJnRI=",
+  "dgSpecHash": "0jIQ19rW47c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\get-partner-details.csproj",
+  "projectFilePath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\get-partner-details.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\s.bh.chandrasekaran\\.nuget\\packages\\closedxml\\0.105.0\\closedxml.0.105.0.nupkg.sha512",
     "C:\\Users\\s.bh.chandrasekaran\\.nuget\\packages\\closedxml.parser\\2.0.0\\closedxml.parser.2.0.0.nupkg.sha512",

@@ -696,11 +696,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\get-partner-details.csproj",
+      "projectUniqueName": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\get-partner-details.csproj",
       "projectName": "get-partner-details",
-      "projectPath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\get-partner-details.csproj",
+      "projectPath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\get-partner-details.csproj",
       "packagesPath": "C:\\Users\\s.bh.chandrasekaran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\console\\get-partner-details\\obj\\",
+      "outputPath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
