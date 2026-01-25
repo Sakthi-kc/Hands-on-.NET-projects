@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\services\\businesslogic\\snrfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\businesslogic\\snrfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\get-partner-details.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:get-partner-details.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\services\\businesslogic\\partnerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\businesslogic\\partnerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\services\\businesslogic\\configclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\businesslogic\\configclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\services\\implementation\\excelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\implementation\\excelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\services\\implementation\\exceldatasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\implementation\\exceldatasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\services\\implementation\\excelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\implementation\\excelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\services\\businesslogic\\partnerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\businesslogic\\partnerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,21 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAkwDEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAUwEUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-20T15:50:01.98Z",
               "IsPinned": true,
@@ -64,93 +44,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "get-partner-details",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\get-partner-details.csproj",
-              "RelativeDocumentMoniker": "get-partner-details.csproj",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\get-partner-details.csproj",
-              "RelativeToolTip": "get-partner-details.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-25T04:01:04.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ConfigClass.cs",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\BusinessLogic\\ConfigClass.cs",
-              "RelativeDocumentMoniker": "Services\\BusinessLogic\\ConfigClass.cs",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\BusinessLogic\\ConfigClass.cs",
-              "RelativeToolTip": "Services\\BusinessLogic\\ConfigClass.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAuwA8AAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T03:41:47.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SNRFService.cs",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\BusinessLogic\\SNRFService.cs",
-              "RelativeDocumentMoniker": "Services\\BusinessLogic\\SNRFService.cs",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\BusinessLogic\\SNRFService.cs",
-              "RelativeToolTip": "Services\\BusinessLogic\\SNRFService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAgwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T03:37:02.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appSettings.json",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\appSettings.json",
-              "RelativeDocumentMoniker": "appSettings.json",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\appSettings.json",
-              "RelativeToolTip": "appSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-25T03:35:49.823Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PartnerService.cs",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\BusinessLogic\\PartnerService.cs",
-              "RelativeDocumentMoniker": "Services\\BusinessLogic\\PartnerService.cs",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\BusinessLogic\\PartnerService.cs",
-              "RelativeToolTip": "Services\\BusinessLogic\\PartnerService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAADwvw8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T15:27:06.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ExcelDataSource.cs",
-              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\Implementation\\ExcelDataSource.cs",
-              "RelativeDocumentMoniker": "Services\\Implementation\\ExcelDataSource.cs",
-              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\Implementation\\ExcelDataSource.cs",
-              "RelativeToolTip": "Services\\Implementation\\ExcelDataSource.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T15:25:45.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "ExcelService.cs",
               "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\Implementation\\ExcelService.cs",
               "RelativeDocumentMoniker": "Services\\Implementation\\ExcelService.cs",
               "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\Implementation\\ExcelService.cs",
               "RelativeToolTip": "Services\\Implementation\\ExcelService.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAACwAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T14:32:40.771Z"
+              "WhenOpened": "2026-01-25T11:25:53.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExcelDataSource.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\Implementation\\ExcelDataSource.cs",
+              "RelativeDocumentMoniker": "Services\\Implementation\\ExcelDataSource.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\Implementation\\ExcelDataSource.cs",
+              "RelativeToolTip": "Services\\Implementation\\ExcelDataSource.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T11:25:38.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PartnerService.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\BusinessLogic\\PartnerService.cs",
+              "RelativeDocumentMoniker": "Services\\BusinessLogic\\PartnerService.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\BusinessLogic\\PartnerService.cs",
+              "RelativeToolTip": "Services\\BusinessLogic\\PartnerService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvxkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T11:24:54.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         }
