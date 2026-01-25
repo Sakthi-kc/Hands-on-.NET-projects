@@ -19,9 +19,12 @@ var config = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .Build();
 
+//config is private so stores globally to AppConfig
+AppConfig.Config = config;
 
 //copy the file to CurrentDirectory
-string filePath = config["ExcelFileName"];
+//this means AppConfig.Config["ExcelFileName"]
+string filePath = AppConfig.ExcelFileName;
 
 
 //ExcelDatasource depends on contract (interface) not concrete class - loosely coupled and DIP principle
@@ -44,7 +47,7 @@ if (partnerDetails is null)
 }
 
 //checks if this key exists in partnerDetails, returns true or false and sets accordingly
-if (!partnerDetails.TryGetValue(config["ExcelColumn"], out string partnerPrefix))
+if (!partnerDetails.TryGetValue(AppConfig.PrefixColumn, out string partnerPrefix))
 {
     Console.WriteLine("Column not exist, please check source data");
     return;

@@ -13,7 +13,7 @@ namespace get_partner_details.Services.BusinessLogic
         {
             foreach (var row in partnerData)
             {
-                if (row["Id"].Equals(partnerId, StringComparison.OrdinalIgnoreCase))
+                if (row[AppConfig.InputColumnName].Equals(partnerId, StringComparison.OrdinalIgnoreCase))
                 {
                     return row;
                 }
