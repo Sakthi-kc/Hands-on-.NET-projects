@@ -13,7 +13,7 @@ namespace get_partner_details.Services.Implementation
 
         public ExcelDataSource(IExcelService excelService)
         {
-            //creates ExcelService object, calls the constructor and assigns value
+            //stores ExcelService object for future reference
             _excelService = excelService;
         }
 
