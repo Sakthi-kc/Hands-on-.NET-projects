@@ -1,0 +1,14 @@
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\bin\Debug\net10.0\linq concepts.exe
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\bin\Debug\net10.0\linq concepts.deps.json
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\bin\Debug\net10.0\linq concepts.runtimeconfig.json
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\bin\Debug\net10.0\linq concepts.dll
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\bin\Debug\net10.0\linq concepts.pdb
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\obj\Debug\net10.0\linq concepts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\obj\Debug\net10.0\linq concepts.AssemblyInfoInputs.cache
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\obj\Debug\net10.0\linq concepts.AssemblyInfo.cs
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\obj\Debug\net10.0\linq concepts.csproj.CoreCompileInputs.cache
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\obj\Debug\net10.0\linq concepts.dll
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\obj\Debug\net10.0\refint\linq concepts.dll
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\obj\Debug\net10.0\linq concepts.pdb
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\obj\Debug\net10.0\linq concepts.genruntimeconfig.cache
+C:\Users\s.bh.chandrasekaran\Documents\course\c# net\c# concepts for fa\linq concepts\obj\Debug\net10.0\ref\linq concepts.dll

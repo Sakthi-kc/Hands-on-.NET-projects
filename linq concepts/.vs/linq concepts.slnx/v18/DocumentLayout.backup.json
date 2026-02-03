@@ -1,0 +1,124 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{244D23F6-1598-9D3A-48B3-CD86D4B0D84A}|linq concepts.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\c# concepts for fa\\linq concepts\\aggregateclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D23F6-1598-9D3A-48B3-CD86D4B0D84A}|linq concepts.csproj|solutionrelative:aggregateclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D23F6-1598-9D3A-48B3-CD86D4B0D84A}|linq concepts.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\c# concepts for fa\\linq concepts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D23F6-1598-9D3A-48B3-CD86D4B0D84A}|linq concepts.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D23F6-1598-9D3A-48B3-CD86D4B0D84A}|linq concepts.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\c# concepts for fa\\linq concepts\\whereclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D23F6-1598-9D3A-48B3-CD86D4B0D84A}|linq concepts.csproj|solutionrelative:whereclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D23F6-1598-9D3A-48B3-CD86D4B0D84A}|linq concepts.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\c# concepts for fa\\linq concepts\\orderbyclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D23F6-1598-9D3A-48B3-CD86D4B0D84A}|linq concepts.csproj|solutionrelative:orderbyclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D23F6-1598-9D3A-48B3-CD86D4B0D84A}|linq concepts.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\c# concepts for fa\\linq concepts\\groupbyclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D23F6-1598-9D3A-48B3-CD86D4B0D84A}|linq concepts.csproj|solutionrelative:groupbyclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244D23F6-1598-9D3A-48B3-CD86D4B0D84A}|linq concepts.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\c# concepts for fa\\linq concepts\\firstclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244D23F6-1598-9D3A-48B3-CD86D4B0D84A}|linq concepts.csproj|solutionrelative:firstclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AggregateClass.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\AggregateClass.cs",
+              "RelativeDocumentMoniker": "AggregateClass.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\AggregateClass.cs",
+              "RelativeToolTip": "AggregateClass.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwCIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T15:20:25.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FirstClass.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\FirstClass.cs",
+              "RelativeDocumentMoniker": "FirstClass.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\FirstClass.cs",
+              "RelativeToolTip": "FirstClass.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T10:41:36.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GroupByClass.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\GroupByClass.cs",
+              "RelativeDocumentMoniker": "GroupByClass.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\GroupByClass.cs",
+              "RelativeToolTip": "GroupByClass.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T12:23:23.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WhereClass.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\WhereClass.cs",
+              "RelativeDocumentMoniker": "WhereClass.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\WhereClass.cs",
+              "RelativeToolTip": "WhereClass.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAUwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T06:23:57.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T10:45:51.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderByClass.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\OrderByClass.cs",
+              "RelativeDocumentMoniker": "OrderByClass.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\OrderByClass.cs",
+              "RelativeToolTip": "OrderByClass.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T12:00:28.843Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
