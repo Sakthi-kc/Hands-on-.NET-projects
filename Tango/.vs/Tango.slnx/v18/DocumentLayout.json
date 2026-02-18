@@ -1,0 +1,221 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\tango\\tango.employee\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|solutionrelative:tango.employee\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\tango\\tango.employee\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|solutionrelative:tango.employee\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\tango\\tango.employee\\data\\config\\employeeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|solutionrelative:tango.employee\\data\\config\\employeeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\tango\\tango.employee\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|solutionrelative:tango.employee\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\tango\\tango.employee\\data\\tangodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|solutionrelative:tango.employee\\data\\tangodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\tango\\tango.employee\\entities\\employeeentitymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|solutionrelative:tango.employee\\entities\\employeeentitymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\tango\\tango.employee\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|solutionrelative:tango.employee\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\tango\\tango.employee\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|solutionrelative:tango.employee\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\tango\\tango.employee\\dtos\\updateemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|solutionrelative:tango.employee\\dtos\\updateemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\tango\\tango.employee\\dtos\\createemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|solutionrelative:tango.employee\\dtos\\createemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\tango\\tango.employee\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|solutionrelative:tango.employee\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\tango\\tango.employee\\migrations\\20260218110129_modifytableschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7172C95-864C-7E63-F320-168E28BB3063}|Tango.Employee\\Tango.Employee.csproj|solutionrelative:tango.employee\\migrations\\20260218110129_modifytableschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\.gitignore",
+              "RelativeDocumentMoniker": "Tango.Employee\\.gitignore",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\.gitignore",
+              "RelativeToolTip": "Tango.Employee\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-18T15:05:21.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeConfig.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Data\\Config\\EmployeeConfig.cs",
+              "RelativeDocumentMoniker": "Tango.Employee\\Data\\Config\\EmployeeConfig.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Data\\Config\\EmployeeConfig.cs",
+              "RelativeToolTip": "Tango.Employee\\Data\\Config\\EmployeeConfig.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T11:37:50.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TangoDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Data\\TangoDBContext.cs",
+              "RelativeDocumentMoniker": "Tango.Employee\\Data\\TangoDBContext.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Data\\TangoDBContext.cs",
+              "RelativeToolTip": "Tango.Employee\\Data\\TangoDBContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T07:39:15.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Tango.Employee\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Tango.Employee\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwCwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T16:30:13.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeEntityModel.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Entities\\EmployeeEntityModel.cs",
+              "RelativeDocumentMoniker": "Tango.Employee\\Entities\\EmployeeEntityModel.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Entities\\EmployeeEntityModel.cs",
+              "RelativeToolTip": "Tango.Employee\\Entities\\EmployeeEntityModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T10:29:57.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Program.cs",
+              "RelativeDocumentMoniker": "Tango.Employee\\Program.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Program.cs",
+              "RelativeToolTip": "Tango.Employee\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T15:37:16.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20260218110129_ModifyTableSchema.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Migrations\\20260218110129_ModifyTableSchema.cs",
+              "RelativeDocumentMoniker": "Tango.Employee\\Migrations\\20260218110129_ModifyTableSchema.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Migrations\\20260218110129_ModifyTableSchema.cs",
+              "RelativeToolTip": "Tango.Employee\\Migrations\\20260218110129_ModifyTableSchema.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwD8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T11:01:29.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Tango.Employee\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\appsettings.Development.json",
+              "RelativeToolTip": "Tango.Employee\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-18T07:13:04.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\DTOs\\EmployeeDTO.cs",
+              "RelativeDocumentMoniker": "Tango.Employee\\DTOs\\EmployeeDTO.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\DTOs\\EmployeeDTO.cs",
+              "RelativeToolTip": "Tango.Employee\\DTOs\\EmployeeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T16:59:01.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdateEmployeeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\DTOs\\UpdateEmployeeDTO.cs",
+              "RelativeDocumentMoniker": "Tango.Employee\\DTOs\\UpdateEmployeeDTO.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\DTOs\\UpdateEmployeeDTO.cs",
+              "RelativeToolTip": "Tango.Employee\\DTOs\\UpdateEmployeeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T16:59:05.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateEmployeeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\DTOs\\CreateEmployeeDTO.cs",
+              "RelativeDocumentMoniker": "Tango.Employee\\DTOs\\CreateEmployeeDTO.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\DTOs\\CreateEmployeeDTO.cs",
+              "RelativeToolTip": "Tango.Employee\\DTOs\\CreateEmployeeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T16:58:56.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Tango.Employee\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\Tango\\Tango.Employee\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Tango.Employee\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-17T16:21:47.902Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

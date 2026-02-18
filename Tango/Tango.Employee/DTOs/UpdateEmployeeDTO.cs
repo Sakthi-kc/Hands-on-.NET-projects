@@ -1,0 +1,12 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Tango.Employee.DTOs
+{
+    public class UpdateEmployeeDTO
+    {
+        public string? EmployeeName { get; set; }
+
+        [StringLength(3, MinimumLength = 3, ErrorMessage = "Location must be exactly 3 chars")]
+        public string? Location { get; set; }
+    }
+}

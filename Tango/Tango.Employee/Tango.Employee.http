@@ -1,0 +1,6 @@
+@Tango.Employee_HostAddress = http://localhost:5287
+
+GET {{Tango.Employee_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
