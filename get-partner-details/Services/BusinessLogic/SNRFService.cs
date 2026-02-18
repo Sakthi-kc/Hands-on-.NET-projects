@@ -14,7 +14,7 @@ namespace get_partner_details.Services.BusinessLogic
                 .ToString("X")[..4];
 
 
-            //get a number between 1 - 9999
+            //get a number between 1 - 9999 appended with 0
             string randomNumber = Random.Shared.Next(1, 10000).ToString("D4");
 
 

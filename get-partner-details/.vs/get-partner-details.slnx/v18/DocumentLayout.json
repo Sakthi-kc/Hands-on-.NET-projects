@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\services\\implementation\\excelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\implementation\\excelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\services\\interfaces\\iexcelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\interfaces\\iexcelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|c:\\users\\s.bh.chandrasekaran\\documents\\course\\c# net\\hands on projects\\get-partner-details\\services\\interfaces\\idatasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87A0BF6-9057-C6E2-EE30-40B085950BEC}|get-partner-details.csproj|solutionrelative:services\\interfaces\\idatasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,7 +36,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAUwEUAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAACMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-20T15:50:01.98Z",
               "IsPinned": true,
@@ -33,6 +45,42 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IExcelService.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\Interfaces\\IExcelService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IExcelService.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\Interfaces\\IExcelService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IExcelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T05:59:35.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IDataSource.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\Interfaces\\IDataSource.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IDataSource.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\Interfaces\\IDataSource.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IDataSource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T05:59:33.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExcelService.cs",
+              "DocumentMoniker": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\Implementation\\ExcelService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementation\\ExcelService.cs",
+              "ToolTip": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\get-partner-details\\Services\\Implementation\\ExcelService.cs",
+              "RelativeToolTip": "Services\\Implementation\\ExcelService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T06:09:22.208Z"
             }
           ]
         }

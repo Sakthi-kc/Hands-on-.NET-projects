@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\linq concepts.csproj",
+      "projectUniqueName": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\linq concepts\\linq concepts.csproj",
       "projectName": "linq concepts",
-      "projectPath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\linq concepts.csproj",
+      "projectPath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\linq concepts\\linq concepts.csproj",
       "packagesPath": "C:\\Users\\s.bh.chandrasekaran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\c# concepts for fa\\linq concepts\\obj\\",
+      "outputPath": "C:\\Users\\s.bh.chandrasekaran\\Documents\\course\\c# net\\hands on projects\\linq concepts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

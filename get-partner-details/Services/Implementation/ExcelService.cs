@@ -54,7 +54,8 @@ namespace get_partner_details.Services.Implementation
                     row => headers
                     // For each header, select its value and index as {header = "", index = 0}
                     // Each of this pair is item
-                    .Select(
+                    .Select
+                    (
                         (header, index) => new { header, index }
                     )
                     // Convert to dictionary (keySelector, valueSelector)
