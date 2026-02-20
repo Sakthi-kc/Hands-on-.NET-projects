@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.EntityFrameworkCore;
+using Tango.Employee.Configuration;
 using Tango.Employee.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,8 @@ builder.Services.AddDbContext<TangoDBContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("SQLConnectionString"));
 });
+
+builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();

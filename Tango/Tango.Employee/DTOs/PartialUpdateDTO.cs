@@ -2,13 +2,13 @@
 
 namespace Tango.Employee.DTOs
 {
-    public class UpdateEmployeeDTO
+    public class PartialUpdateDTO
     {
-        public string EmployeeName { get; set; }
+        public string? EmployeeName { get; set; }
 
-        public string Department { get; set; }
+        public string? Department { get; set; }
 
         [StringLength(3, MinimumLength = 3, ErrorMessage = "Location must be exactly 3 chars")]
-        public string Location { get; set; }
+        public string? Location { get; set; }
     }
 }

@@ -1,10 +1,14 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using System.Data;
 using Tango.Employee.Data;
 using Tango.Employee.DTOs;
+using Tango.Employee.Entities;
 
 namespace Tango.Employee.Controllers
 {
@@ -16,11 +20,14 @@ namespace Tango.Employee.Controllers
     {
         private readonly ILogger<EmployeeController> _logger;
         private readonly TangoDBContext _context;
+        private readonly IMapper _mapper;
 
-        public EmployeeController(ILogger<EmployeeController> logger, TangoDBContext context)
+        public EmployeeController(ILogger<EmployeeController> logger, TangoDBContext context, IMapper mapper)
         {
             _logger = logger;
             _context = context;
+            _mapper = mapper;
+
             _logger.LogTrace("Note: Constructor created");
         }
 
@@ -33,67 +40,93 @@ namespace Tango.Employee.Controllers
 
         [HttpGet]
         [Route("/api/Employees")]
-        public ActionResult<IEnumerable<EmployeeDTO>> GetEmployees()
+        public async Task<ActionResult<IEnumerable<EmployeeDTO>>> GetEmployees()
         {
-            return Ok(_context.Employees);
+            //when we want to read data but EFCore wont track this object, saves memory
+            var employees = await _context.Employees
+                .AsNoTracking()
+                .ToListAsync();
+
+                //if we are projecting to a DTO with select, tracking would not apply to the DTO, so not required
+
+                //.Select(emp => new EmployeeDTO
+                //{
+                //    EmployeeID = emp.EmployeeID,
+                //    EmployeeName = emp.EmployeeName,
+                //    Department = emp.Department,
+                //    Location = emp.CityCode
+                //})
+
+            var employeesDTO = _mapper.Map<List<EmployeeDTO>>(employees);
+            return Ok(employeesDTO);
         }
 
         [HttpGet]
         [Route("{id:int}")]
-        public ActionResult<EmployeeDTO> GetEmployeeById(int id)
+        public async Task<ActionResult<EmployeeDTO>> GetEmployeeById(int id)
         {
-            var employee = _context.Employees
-                .Where(emp => emp.EmployeeID == id)
-                .FirstOrDefault();
+            var employee = await _context.Employees
+                .AsNoTracking()
+                .FirstOrDefaultAsync(emp => emp.EmployeeID == id);
 
             if (employee == null)
-                return BadRequest($"No employee exists with this id {id}");
+                return NotFound($"No employee exists with this id {id}");
+
+            var employeeDTO = _mapper.Map<EmployeeDTO>(employee);
 
             return Ok(employee);
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult DeleteEmployee(int id)
+        public async Task<IActionResult> DeleteEmployee(int id)
         {
-            var employee = _context.Employees
-                .FirstOrDefault(emp => emp.EmployeeID == id);
+            try
+            { 
+                //Relational DB delete action can happen with PKey no additional details required
+                //this creates an object and sets EmployeeId with given Id
+                var employee = new Entities.EmployeeEntityModel
+                {
+                    EmployeeID = id
+                };
 
-            if(employee == null)
-                return BadRequest($"No employee exists with this id {id}");
+                //If the entity is not already tracked, EF attaches it
+                //and marks its state as Deleted in the ChangeTracker
+                _context.Employees.Remove(employee);
 
-            _context.Employees.Remove(employee);
-            _context.SaveChanges();
+                //this generates and executes the DELETE SQL statement against the database
+                //SaveChangesAsync() processes all tracked changes
+            
+                await _context.SaveChangesAsync();
 
-            return Ok();
+                return Ok();
+            }
+            catch(Exception)
+            {
+                return NotFound($"No employee exists with this id {id}");
+            }
         }
 
         [HttpPost]
         [Route("Create")]
-        public ActionResult<EmployeeDTO> CreateEmployee([FromBody] CreateEmployeeDTO body)
+        public async Task<ActionResult<EmployeeDTO>> CreateEmployee([FromBody] CreateEmployeeDTO body)
         {
-            var newEmployee = new Entities.EmployeeEntityModel
-            {
-                EmployeeName = body.EmployeeName,
-                Department = body.Department,
-                CityCode = body.Location
-            };
+            var newEmployee = _mapper.Map<EmployeeEntityModel>(body);
 
+            //Add should come first for tracking and will track id with default 0 for temporary
+            //We can add anotherEmployee which also will have id 0 but thir state is added so no error thrown
             _context.Employees.Add(newEmployee);
-            _context.SaveChanges();
+
+            //Updates DB with the tracked changes and since id is identity column, DB will generate it
+            await _context.SaveChangesAsync();
 
             int id = newEmployee.EmployeeID;
 
-            var responseBody = new EmployeeDTO
-            {
-                EmployeeID = newEmployee.EmployeeID,
-                EmployeeName = newEmployee.EmployeeName,
-                Department = newEmployee.Department,
-                Location = newEmployee.CityCode
-            };
+            var responseBody = _mapper.Map<EmployeeDTO>(newEmployee);
 
-            //return Created($"Employee/{newId}", newEmployee);
-            return CreatedAtAction(nameof(GetEmployeeById), new { id = id }, responseBody);
+            //the return Created($"Employee/{newId}", newEmployee);
+            //route value expects object and not primitive types
+            return CreatedAtAction(nameof(GetEmployeeById), new {id = id}, responseBody);
         }
 
         //update all the fields
@@ -101,51 +134,52 @@ namespace Tango.Employee.Controllers
         [HttpPut]
         [Route("{id}")]
         [ProducesResponseType(204)]
-        public IActionResult UpdateEmployee(int id, [FromBody] UpdateEmployeeDTO body)
+        public async Task<IActionResult> UpdateEmployee(int id, [FromBody] UpdateEmployeeDTO body)
         {
-            var employee = _context.Employees
-                .Where(emp => emp.EmployeeID == id).FirstOrDefault();
+            //EFCore tracks this entity instance but state is unchanged
+            var employee = await _context.Employees
+                .FirstOrDefaultAsync(emp => emp.EmployeeID == id);
 
             if(employee == null)
                 return NotFound();
 
-            employee.EmployeeName = body.EmployeeName;
-            employee.CityCode = body.Location;
-            _context.SaveChanges();
+            //map(source, destination) here the entity state becomes updated
+            _mapper.Map(body, employee);
+
+            //add will make the state as added and DB will try to insert causing ID error
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
 
         //updates partial records
         [HttpPatch("{id}")]
-        public ActionResult<EmployeeDTO> UpdateEmployeePartial(int id, 
-            [FromBody] JsonPatchDocument<EmployeeDTO> body)
+        public async Task<ActionResult<EmployeeDTO>> UpdateEmployeePartial(int id, 
+            [FromBody] JsonPatchDocument<PartialUpdateDTO> body)
         {
             if (body == null || id <= 0)
                 return BadRequest();
 
-            var employee = _context.Employees
-                .Where(emp => emp.EmployeeID == id).FirstOrDefault();
+            var employee = await _context.Employees
+                .Where(emp => emp.EmployeeID == id).FirstOrDefaultAsync();
 
             if (employee == null)
-                return NotFound();
+                return NotFound($"No employee exists with this id {id}");
 
-            //create a copy to validate
-            var employeeRecord = new EmployeeDTO
-            {
-                EmployeeID = id,
-                EmployeeName = employee.EmployeeName,
-                Location = employee.CityCode,
-                Department = employee.Department
-            };
+            //create a copy to apply changes and validate
+            var employeeRecord = _mapper.Map<PartialUpdateDTO>(employee);
 
+            //ApplyTo updates only the properties in path
+            //if the op and path passed is incorrect error will be added to modelState
             body.ApplyTo(employeeRecord, ModelState);
             TryValidateModel(employeeRecord);
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            employee.CityCode = employeeRecord.Location;
-            _context.SaveChanges();
+            _mapper.Map(employeeRecord, employee);
+
+            await _context.SaveChangesAsync();
 
             return Ok(employee);
         }
