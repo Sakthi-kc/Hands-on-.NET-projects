@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Data;
 using Tango.Employee.Data;
+using Tango.Employee.Data.Repositories;
 using Tango.Employee.DTOs;
 using Tango.Employee.Entities;
 
@@ -19,14 +20,14 @@ namespace Tango.Employee.Controllers
     public class EmployeeController : ControllerBase
     {
         private readonly ILogger<EmployeeController> _logger;
-        private readonly TangoDBContext _context;
         private readonly IMapper _mapper;
+        private readonly ITangoRepo<EmployeeEntityModel> _employeeRepo;
 
-        public EmployeeController(ILogger<EmployeeController> logger, TangoDBContext context, IMapper mapper)
+        public EmployeeController(ILogger<EmployeeController> logger, IMapper mapper, ITangoRepo<EmployeeEntityModel> employeeRepo)
         {
             _logger = logger;
-            _context = context;
             _mapper = mapper;
+            _employeeRepo = employeeRepo;
 
             _logger.LogTrace("Note: Constructor created");
         }
@@ -43,9 +44,7 @@ namespace Tango.Employee.Controllers
         public async Task<ActionResult<IEnumerable<EmployeeDTO>>> GetEmployees()
         {
             //when we want to read data but EFCore wont track this object, saves memory
-            var employees = await _context.Employees
-                .AsNoTracking()
-                .ToListAsync();
+            var employees = await _employeeRepo.GetAllRecordsAsync();
 
                 //if we are projecting to a DTO with select, tracking would not apply to the DTO, so not required
 
@@ -65,9 +64,7 @@ namespace Tango.Employee.Controllers
         [Route("{id:int}")]
         public async Task<ActionResult<EmployeeDTO>> GetEmployeeById(int id)
         {
-            var employee = await _context.Employees
-                .AsNoTracking()
-                .FirstOrDefaultAsync(emp => emp.EmployeeID == id);
+            var employee = await _employeeRepo.GetByIdNoTrackingAsync(emp => emp.EmployeeID == id);
 
             if (employee == null)
                 return NotFound($"No employee exists with this id {id}");
@@ -81,30 +78,14 @@ namespace Tango.Employee.Controllers
         [Route("{id}")]
         public async Task<IActionResult> DeleteEmployee(int id)
         {
-            try
-            { 
-                //Relational DB delete action can happen with PKey no additional details required
-                //this creates an object and sets EmployeeId with given Id
-                var employee = new Entities.EmployeeEntityModel
-                {
-                    EmployeeID = id
-                };
+            var employee = await _employeeRepo.GetByIdAsync(id);
 
-                //If the entity is not already tracked, EF attaches it
-                //and marks its state as Deleted in the ChangeTracker
-                _context.Employees.Remove(employee);
-
-                //this generates and executes the DELETE SQL statement against the database
-                //SaveChangesAsync() processes all tracked changes
-            
-                await _context.SaveChangesAsync();
-
-                return Ok();
-            }
-            catch(Exception)
-            {
+            if(employee == null)
                 return NotFound($"No employee exists with this id {id}");
-            }
+
+            await _employeeRepo.DeleteRecordAsync(employee);
+            await _employeeRepo.SaveChangesAsync();
+            return Ok();
         }
 
         [HttpPost]
@@ -115,10 +96,11 @@ namespace Tango.Employee.Controllers
 
             //Add should come first for tracking and will track id with default 0 for temporary
             //We can add anotherEmployee which also will have id 0 but thir state is added so no error thrown
-            _context.Employees.Add(newEmployee);
+            await _employeeRepo.CreateRecordAsync(newEmployee);
 
             //Updates DB with the tracked changes and since id is identity column, DB will generate it
-            await _context.SaveChangesAsync();
+            //EF automatically updates newEmployee with the new id generated
+            await _employeeRepo.SaveChangesAsync();
 
             int id = newEmployee.EmployeeID;
 
@@ -137,17 +119,16 @@ namespace Tango.Employee.Controllers
         public async Task<IActionResult> UpdateEmployee(int id, [FromBody] UpdateEmployeeDTO body)
         {
             //EFCore tracks this entity instance but state is unchanged
-            var employee = await _context.Employees
-                .FirstOrDefaultAsync(emp => emp.EmployeeID == id);
+            var employee = await _employeeRepo.GetByIdAsync(id);
 
             if(employee == null)
-                return NotFound();
+                return NotFound($"No employee exists with this id {id}");
 
             //map(source, destination) here the entity state becomes updated
             _mapper.Map(body, employee);
 
             //add will make the state as added and DB will try to insert causing ID error
-            await _context.SaveChangesAsync();
+            await _employeeRepo.SaveChangesAsync();
 
             return NoContent();
         }
@@ -160,8 +141,7 @@ namespace Tango.Employee.Controllers
             if (body == null || id <= 0)
                 return BadRequest();
 
-            var employee = await _context.Employees
-                .Where(emp => emp.EmployeeID == id).FirstOrDefaultAsync();
+            var employee = await _employeeRepo.GetByIdAsync(id);
 
             if (employee == null)
                 return NotFound($"No employee exists with this id {id}");
@@ -172,14 +152,17 @@ namespace Tango.Employee.Controllers
             //ApplyTo updates only the properties in path
             //if the op and path passed is incorrect error will be added to modelState
             body.ApplyTo(employeeRecord, ModelState);
+
+            //This validates against the annotations against PartialUpdateDTO as the object is created of this type
             TryValidateModel(employeeRecord);
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
+            //this updates the existing employee object with received property values and EF marking the entity as modified
             _mapper.Map(employeeRecord, employee);
 
-            await _context.SaveChangesAsync();
+            await _employeeRepo.SaveChangesAsync();
 
             return Ok(employee);
         }
