@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Docs Reference Soln/">
+    <File Path="Docs/1 Swagger and Data.md" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="Product Management/Product Management.csproj" />
+</Solution>
