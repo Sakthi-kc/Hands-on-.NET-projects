@@ -21,9 +21,9 @@ namespace Tango.Employee.Controllers
     {
         private readonly ILogger<EmployeeController> _logger;
         private readonly IMapper _mapper;
-        private readonly ITangoRepo<EmployeeEntityModel> _employeeRepo;
+        private readonly IEmployeeRepo _employeeRepo;
 
-        public EmployeeController(ILogger<EmployeeController> logger, IMapper mapper, ITangoRepo<EmployeeEntityModel> employeeRepo)
+        public EmployeeController(ILogger<EmployeeController> logger, IMapper mapper, IEmployeeRepo employeeRepo)
         {
             _logger = logger;
             _mapper = mapper;
@@ -70,6 +70,20 @@ namespace Tango.Employee.Controllers
                 return NotFound($"No employee exists with this id {id}");
 
             var employeeDTO = _mapper.Map<EmployeeDTO>(employee);
+
+            return Ok(employee);
+        }
+
+        [HttpGet]
+        [Route("{dept}")]
+        public async Task<ActionResult<List<EmployeeDTO>>> GetEmployeeByDept(string dept)
+        {
+            var employee = await _employeeRepo.GetByDeptAsync(emp => emp.Department == dept);
+
+            if (employee == null)
+                return NotFound($"No employee exists in this {dept}");
+
+            var employeeDTO = _mapper.Map<List<EmployeeDTO>>(employee);
 
             return Ok(employee);
         }

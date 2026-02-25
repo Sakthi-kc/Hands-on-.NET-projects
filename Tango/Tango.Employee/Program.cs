@@ -21,6 +21,7 @@ builder.Services.AddDbContext<TangoDBContext>(options =>
 builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
 
 builder.Services.AddScoped(typeof(ITangoRepo<>), typeof(TangoRepo<>));
+builder.Services.AddScoped<IEmployeeRepo, EmployeeRepo>();
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();

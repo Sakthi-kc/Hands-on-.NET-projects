@@ -8,8 +8,8 @@ namespace Tango.Employee.Data.Repositories
 {
     public class TangoRepo<T> : ITangoRepo<T> where T : class
     {
-        private readonly TangoDBContext _context;
-        private DbSet<T> _dbSet;
+        protected readonly TangoDBContext _context;
+        protected DbSet<T> _dbSet;
 
         public TangoRepo(TangoDBContext context)
         {

@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/Docs Reference Soln/">
     <File Path="Docs/1 Swagger and Data.md" />
+    <File Path="Docs/2 EFCore and Migration.md" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
