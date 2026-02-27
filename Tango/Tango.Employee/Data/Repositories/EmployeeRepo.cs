@@ -12,10 +12,8 @@ namespace Tango.Employee.Data.Repositories
         }
         public async Task<List<EmployeeEntityModel>> GetByDeptAsync(Expression<Func<EmployeeEntityModel,bool>> filters)
         {
-            var employee = await _dbSet
+            return await _dbSet
                 .Where(filters).ToListAsync();
-
-            return employee;
         }
     }
 }

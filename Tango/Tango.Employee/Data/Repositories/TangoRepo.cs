@@ -6,6 +6,8 @@ using Tango.Employee.Entities;
 
 namespace Tango.Employee.Data.Repositories
 {
+    //EF Core itself requires TEntity (DbSet<TEntity>) to be a class, hence declare where else it will throw compile time error
+
     public class TangoRepo<T> : ITangoRepo<T> where T : class
     {
         protected readonly TangoDBContext _context;
@@ -19,35 +21,24 @@ namespace Tango.Employee.Data.Repositories
         }
         public async Task<List<T>> GetAllRecordsAsync()
         {
-            var employees = await _dbSet.ToListAsync();
-            return employees;
+            return await _dbSet.ToListAsync();
         }
 
         public async Task<T> GetByIdNoTrackingAsync(Expression<Func<T, bool>> filters)
         {
-            var employees = await _dbSet
+            return await _dbSet
                 .AsNoTracking()
                 .FirstOrDefaultAsync(filters);
-
-            return employees;
         }
 
         public async Task<T> GetByIdAsync(int id)
         {
-            var employee = await _dbSet.FindAsync(id);
-
-            return employee;
+            return await _dbSet.FindAsync(id);
         }
 
-        public async Task DeleteRecordAsync(T body)
-        {
-            _dbSet.Remove(body);
-        }
+        public void DeleteRecord(T body) => _dbSet.Remove(body);
 
-        public async Task CreateRecordAsync(T body)
-        {
-            _dbSet.Add(body);
-        }
+        public void CreateRecord(T body) => _dbSet.Add(body);
 
         public async Task SaveChangesAsync()
         {

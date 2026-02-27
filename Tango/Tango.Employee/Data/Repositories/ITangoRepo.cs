@@ -14,9 +14,9 @@ namespace Tango.Employee.Data.Repositories
 
         Task<T> GetByIdAsync(int id);
 
-        Task DeleteRecordAsync(T body);
+        void DeleteRecord(T body);
 
-        Task CreateRecordAsync(T body);
+        void CreateRecord(T body);
 
         Task SaveChangesAsync();
     }
