@@ -12,7 +12,7 @@ Under Data folder:
 Under same Data folder:
 6. Create a Config folder
 7. Create an EntityTypeConfig file, inject IEntityTypeConfiguration<EntityModelClass> 
-8. Add void Configure(EntityTypeBuilder builder) method to define the database table schema which can be modified whenever needed
+8. Add void Configure(EntityTypeBuilder<EntityModelClass> builder) method to define the database table schema which can be modified whenever needed
 
 9. Add a protected override void OnModelCreating(ModelBuilder modelbuilder) method in DBContext class and add this config class reference
 

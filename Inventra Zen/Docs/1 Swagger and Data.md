@@ -10,4 +10,17 @@ Under EntityModels folder:
 2. Create an EntityModel class
 
 Under DTOs folder:
-3. Create DTOs representing API request and response properties
+3. Create DTOs representing API request and response properties with data annotations
+
+
+**Notes**:
+
+1. Keep the DTO in sync with Database for eg: length
+2. Setup Range([0, .MaxValue]) so that it does not accept negative values
+3. required on property is compile time which will not allow to create instance without a value for this property
+   however, = default! supresses the warning and confirms this will be assigned a non-null value
+4. [Required] is runtime validation annotation
+5. Attribute order does not matter
+
+
+6. When we want to update certain fields that are non-null add ? to the type in DTO and donot keep it as [Required]

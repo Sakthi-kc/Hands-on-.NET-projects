@@ -16,6 +16,7 @@ namespace Product_Management.Data.Config
             builder.Property(rec => rec.Price).IsRequired();
             builder.Property(rec => rec.Category).IsRequired().HasMaxLength(50);
 
+            //stored will physically create this column in table
             builder.Property(rec => rec.IsActive).HasComputedColumnSql
                 ("CASE When StockQuantity > 0 THEN 1 ELSE 0 END", stored: true);
 
