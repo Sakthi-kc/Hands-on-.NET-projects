@@ -24,3 +24,4 @@ Under DTOs folder:
 
 
 6. When we want to update certain fields that are non-null add ? to the type in DTO and donot keep it as [Required]
+7. Make sure to have .ForAllMembers(condition for != null) while mapping, so that it will overwrite only non-null values in the retrieved entity 
