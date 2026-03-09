@@ -16,16 +16,20 @@ builder.Services.AddDbContext<ProductDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnectionString"));
 });
 
+
 builder.Services.AddAutoMapper(typeof(ProductAutoMapper));
 
-builder.Services.AddScoped(typeof(IZenRepo<>),typeof(ZenRepo<>));
 
+builder.Services.AddScoped(typeof(IZenRepo<>),typeof(ZenRepo<>));
 builder.Services.AddScoped<IProductRepo, ProductRepo>();
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

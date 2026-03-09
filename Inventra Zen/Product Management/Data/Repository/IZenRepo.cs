@@ -7,9 +7,9 @@ namespace Product_Management.Data.Repository
     {
         Task<List<T>> GetAllDataAsync();
 
-        Task<T> GetDataAsync(Expression<Func<T, bool>> filter);
+        Task<T?> GetDataAsync(Expression<Func<T, bool>> filter);
 
-        Task<T> GetDataByIdAsync(int id);
+        Task<T?> GetDataByIdAsync(int id);
 
         Task AddDataAsync(T data);
 

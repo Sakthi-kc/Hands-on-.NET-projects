@@ -10,11 +10,19 @@ namespace Product_Management.Data.Repository
             
         }
 
-        public async Task<List<ProductEntityModel>> GetActiveProducts()
+        public async Task<List<ProductEntityModel>?> GetActiveProducts()
         {
             return await _dbSet
-                .Where(product => product.IsActive)
+                .Where(x => x.IsActive)
                 .ToListAsync();
         }
+
+        public async Task<List<ProductEntityModel>?> GetProductsByCategory(string categoryName)
+        {
+            return await _dbSet
+                .Where(x => string.Compare(categoryName, x.Category, StringComparison.OrdinalIgnoreCase) == 0)
+                .ToListAsync();
+        }
+
     }
 }
