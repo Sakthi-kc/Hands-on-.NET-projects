@@ -6,18 +6,14 @@ namespace Product_Management.Services
 {
     public interface IProductService
     {
-        Task<List<ProductDTO>> GetAllDataAsync();
+        Task<ProductDTO?> GetDataByNameAsync(string productName);
 
-        Task<ProductDTO?> GetDataAsync(Expression<Func<ProductDTO, bool>> filter);
+        Task<ProductDTO> AddDataAsync(CreateProductDTO data);
 
-        Task<ProductDTO?> GetDataByIdAsync(int id);
+        Task UpdateDataAsync(UpdateProductDTO data);
 
-        Task AddDataAsync(CreateProductDTO data);
+        Task<List<ProductDTO>> GetActiveProductsAsync();
 
-        void UpdateData(UpdateProductDTO data);
-
-        Task<List<ProductDTO>?> GetActiveProducts();
-
-        Task<List<ProductDTO>?> GetProductsByCategory(string categoryName);
+        Task<List<ProductDTO>> GetProductsByCategory(string categoryName);
     }
 }

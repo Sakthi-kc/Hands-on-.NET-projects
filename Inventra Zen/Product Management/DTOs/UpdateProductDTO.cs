@@ -4,6 +4,8 @@ namespace Product_Management.DTOs
 {
     public class UpdateProductDTO
     {
+        public required string ProductName { get; set; }
+
         [Range(0, double.MaxValue)]
         public decimal? Price { get; set; }
 

@@ -3,6 +3,7 @@ using Product_Management.Data.Repository;
 using Product_Management.DTOs;
 using Product_Management.Entity_Models;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Product_Management.Services
 {
@@ -17,39 +18,45 @@ namespace Product_Management.Services
             _repo = repo;
         }
 
-        public Task AddDataAsync(CreateProductDTO data)
+        public async Task<ProductDTO> AddDataAsync(CreateProductDTO data)
         {
-            throw new NotImplementedException();
+            var newProduct = _mapper.Map<ProductEntityModel>(data);
+            await _repo.AddDataAsync(newProduct);
+
+            await _repo.SaveChangesAsync();
+
+            return _mapper.Map<ProductDTO>(newProduct);
         }
 
-        public Task<List<ProductDTO>?> GetActiveProducts()
+        public async Task<List<ProductDTO>> GetActiveProductsAsync()
         {
-            throw new NotImplementedException();
+            var activeProducts = await _repo.GetActiveProductsAsync();
+
+            return _mapper.Map<List<ProductDTO>>(activeProducts);
         }
 
-        public Task<List<ProductDTO>> GetAllDataAsync()
+
+        public async Task<ProductDTO?> GetDataByNameAsync(string productName)
         {
-            throw new NotImplementedException();
+            var product = await _repo.GetProductByNameAsync(n => n.ProductName == productName);
+
+            return _mapper.Map<ProductDTO>(product);
         }
 
-        public Task<ProductDTO?> GetDataAsync(Expression<Func<ProductDTO, bool>> filter)
+        public async Task<List<ProductDTO>> GetProductsByCategory(string categoryName)
         {
-            throw new NotImplementedException();
+            var products = await _repo.GetProductsByCategoryAsync(categoryName);
+
+            return _mapper.Map<List<ProductDTO>>(products);
         }
 
-        public Task<ProductDTO?> GetDataByIdAsync(int id)
+        public async Task UpdateDataAsync(UpdateProductDTO data)
         {
-            throw new NotImplementedException();
-        }
+            var productToUpdate = await _repo.GetProductByNameAsync(n => n.ProductName == data.ProductName);
 
-        public Task<List<ProductDTO>?> GetProductsByCategory(string categoryName)
-        {
-            throw new NotImplementedException();
-        }
+            _mapper.Map(data, productToUpdate);
 
-        public void UpdateData(UpdateProductDTO data)
-        {
-            throw new NotImplementedException();
+            await _repo.SaveChangesAsync();
         }
     }
 }
