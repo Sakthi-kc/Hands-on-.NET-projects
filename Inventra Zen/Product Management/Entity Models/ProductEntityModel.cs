@@ -1,4 +1,6 @@
-﻿namespace Product_Management.Entity_Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Product_Management.Entity_Models
 {
     public class ProductEntityModel
     {

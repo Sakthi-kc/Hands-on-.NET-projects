@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Product_Management.Data;
 
@@ -10,9 +11,11 @@ using Product_Management.Data;
 namespace Product_Management.Migrations
 {
     [DbContext(typeof(ProductDBContext))]
-    partial class ProductDBContextModelSnapshot : ModelSnapshot
+    [Migration("20260310145710_RenameTable")]
+    partial class RenameTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -37,7 +40,7 @@ namespace Product_Management.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("bit")
-                        .HasComputedColumnSql("CASE When StockQuantity > 0 THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT) END", true);
+                        .HasComputedColumnSql("CASE When StockQuantity > 0 THEN 1 ELSE 0 END", true);
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");

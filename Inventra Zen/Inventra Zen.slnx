@@ -1,13 +1,4 @@
 <Solution>
-  <Folder Name="/Docs/">
-    <File Path="3. Mapper file.md" />
-    <File Path="Docs/1 Swagger and Data.md" />
-    <File Path="Docs/2 EFCore and Migration.md" />
-    <File Path="Docs/4. IRepo pattern.md" />
-    <File Path="Docs/5. Repo pattern.md" />
-    <File Path="Docs/6. TableRepoPattern.md" />
-    <File Path="Docs/7. Creating services.md" />
-  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
   </Folder>

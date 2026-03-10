@@ -18,7 +18,7 @@ namespace Product_Management.Data.Config
 
             //stored will physically create this column in table
             builder.Property(rec => rec.IsActive).HasComputedColumnSql
-                ("CASE When StockQuantity > 0 THEN 1 ELSE 0 END", stored: true);
+                ("CASE When StockQuantity > 0 THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT) END", stored: true);
 
             builder.HasData(
                 new List<ProductEntityModel>
@@ -70,7 +70,10 @@ namespace Product_Management.Data.Config
                     }
                 }
             );
-            
+
+
+            //rename table
+            builder.ToTable("Products");
         }
     }
 }

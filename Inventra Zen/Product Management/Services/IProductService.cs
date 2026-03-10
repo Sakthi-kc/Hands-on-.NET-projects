@@ -10,7 +10,7 @@ namespace Product_Management.Services
 
         Task<ProductDTO> AddDataAsync(CreateProductDTO data);
 
-        Task UpdateDataAsync(UpdateProductDTO data);
+        Task<ProductDTO> UpdateDataAsync(UpdateProductDTO data);
 
         Task<List<ProductDTO>> GetActiveProductsAsync();
 

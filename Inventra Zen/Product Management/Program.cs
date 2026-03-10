@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Product_Management.Configuration;
 using Product_Management.Data;
 using Product_Management.Data.Repository;
+using Product_Management.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,8 @@ builder.Services.AddAutoMapper(typeof(ProductAutoMapper));
 
 builder.Services.AddScoped(typeof(IZenRepo<>),typeof(ZenRepo<>));
 builder.Services.AddScoped<IProductRepo, ProductRepo>();
+
+builder.Services.AddScoped<IProductService, ProductService>();
 
 
 builder.Services.AddEndpointsApiExplorer();

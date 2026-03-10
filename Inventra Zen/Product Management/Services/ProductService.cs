@@ -50,13 +50,15 @@ namespace Product_Management.Services
             return _mapper.Map<List<ProductDTO>>(products);
         }
 
-        public async Task UpdateDataAsync(UpdateProductDTO data)
+        public async Task<ProductDTO> UpdateDataAsync(UpdateProductDTO data)
         {
             var productToUpdate = await _repo.GetProductByNameAsync(n => n.ProductName == data.ProductName);
 
             _mapper.Map(data, productToUpdate);
 
             await _repo.SaveChangesAsync();
+
+            return _mapper.Map<ProductDTO>(productToUpdate);
         }
     }
 }
