@@ -36,25 +36,27 @@ namespace Product_Management.Services
         }
 
 
-        public async Task<ProductDTO?> GetDataByNameAsync(string productName)
+        public async Task<ProductDTO?> GetProductByNameAsync(string productName)
         {
-            var product = await _repo.GetProductByNameAsync(n => n.ProductName == productName);
+            var product = await _repo.GetProductByNameAsync(productName);
 
             return _mapper.Map<ProductDTO>(product);
         }
 
         public async Task<List<ProductDTO>> GetProductsByCategory(string categoryName)
         {
-            var products = await _repo.GetProductsByCategoryAsync(categoryName);
+            var products = await _repo.GetProductsByCategoryAsync(n => n.Category == categoryName);
 
             return _mapper.Map<List<ProductDTO>>(products);
         }
 
         public async Task<ProductDTO> UpdateDataAsync(UpdateProductDTO data)
         {
-            var productToUpdate = await _repo.GetProductByNameAsync(n => n.ProductName == data.ProductName);
+            var productToUpdate = await _repo.GetProductByNameAsync(data.ProductName);
 
             _mapper.Map(data, productToUpdate);
+
+            var product = productToUpdate;
 
             await _repo.SaveChangesAsync();
 

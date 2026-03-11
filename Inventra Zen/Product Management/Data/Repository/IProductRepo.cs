@@ -7,8 +7,8 @@ namespace Product_Management.Data.Repository
     {
         Task<List<ProductEntityModel>> GetActiveProductsAsync();
 
-        Task<List<ProductEntityModel>> GetProductsByCategoryAsync(string categoryName);
+        Task<List<ProductEntityModel>> GetProductsByCategoryAsync(Expression<Func<ProductEntityModel, bool>> filter);
 
-        Task<ProductEntityModel?> GetProductByNameAsync(Expression<Func<ProductEntityModel, bool>> filter);
+        Task<ProductEntityModel?> GetProductByNameAsync(string productName);
     }
 }

@@ -18,16 +18,16 @@ namespace Product_Management.Data.Repository
                 .ToListAsync();
         }
 
-        public async Task<ProductEntityModel?> GetProductByNameAsync(Expression<Func<ProductEntityModel, bool>> filter)
+        public async Task<ProductEntityModel?> GetProductByNameAsync(string productName)
         {
             return await _dbSet
-                .FirstOrDefaultAsync(filter);
+                .FirstOrDefaultAsync(n => n.ProductName.Replace(" ", "").ToLower() == productName.Trim().ToLower());
         }
 
-        public async Task<List<ProductEntityModel>> GetProductsByCategoryAsync(string categoryName)
+        public async Task<List<ProductEntityModel>> GetProductsByCategoryAsync(Expression<Func<ProductEntityModel, bool>> filter)
         {
             return await _dbSet
-                .Where(x => x.Category == categoryName)
+                .Where(filter)
                 .ToListAsync();
         }
 

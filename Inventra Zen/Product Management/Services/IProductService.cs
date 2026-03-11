@@ -6,7 +6,7 @@ namespace Product_Management.Services
 {
     public interface IProductService
     {
-        Task<ProductDTO?> GetDataByNameAsync(string productName);
+        Task<ProductDTO?> GetProductByNameAsync(string productName);
 
         Task<ProductDTO> AddDataAsync(CreateProductDTO data);
 

@@ -19,8 +19,10 @@ namespace Product_Management.Configuration
 
             //Update body to entity model mapping
             CreateMap<UpdateProductDTO, ProductEntityModel>()
+                .ForMember(dest => dest.Price, opt => opt.PreCondition(src => src.Price.HasValue))
+                .ForMember(dest => dest.StockQuantity, opt => opt.PreCondition(src => src.StockQuantity.HasValue))
                 .ForAllMembers(opt => opt.Condition((src, dest, srcMember) => srcMember != null));
-
+                
         }
     }
 }

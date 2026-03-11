@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Product_Management.Validator;
+using System.ComponentModel.DataAnnotations;
 
 namespace Product_Management.DTOs
 {
@@ -9,11 +10,10 @@ namespace Product_Management.DTOs
         public string ProductName { get; set; } = default!;
 
         [Required]
-        [Range(0, double.MaxValue)]
+        [DTOValidatorAttribute(ErrorMessage = "Price must be non-negative.")]
         public decimal Price { get; set; }
 
-        [Required]
-        [Range(0, int.MaxValue)]
+        [DTOValidatorAttribute(ErrorMessage = "Stock quantity must be non-negative.")]
         public int StockQuantity { get; set; }
 
         [Required]
