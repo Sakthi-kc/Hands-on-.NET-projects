@@ -7,7 +7,7 @@ namespace Product_Management.Controller
 {
     [ApiController]
     [Route("api/[Controller]")]
-    [ProducesResponseType(200)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public class ProductsController : ControllerBase
     {
         protected readonly IProductService _service;
@@ -28,7 +28,7 @@ namespace Product_Management.Controller
 
         [HttpGet]
         [Route("Name/{name}")]
-        [ProducesResponseType(404)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProductByName(string name)
         {
             var product = await _service.GetProductByNameAsync(name);
@@ -40,7 +40,7 @@ namespace Product_Management.Controller
         }
 
         [HttpGet]
-        [ProducesResponseType(404)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Route("Category/{categoryName}")]
         public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProductsByCategory(string categoryName)
         {
@@ -55,8 +55,8 @@ namespace Product_Management.Controller
 
         [HttpPost]
         [Route("Create")]
-        [ProducesResponseType(201)]
-        [ProducesResponseType(400)]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<ProductDTO>> AddProduct(CreateProductDTO data)
         {
             var newProduct = await _service.AddDataAsync(data);
@@ -65,9 +65,8 @@ namespace Product_Management.Controller
         }
 
         [HttpPut]
-        [ProducesResponseType(200)]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(404)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [Route("Update")]
         public async Task<ActionResult<ProductDTO>> UpdateProduct(UpdateProductDTO data)
         {
