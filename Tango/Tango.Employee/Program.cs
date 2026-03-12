@@ -1,6 +1,11 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi;
+using System.Text;
 using Tango.Employee.Configuration;
 using Tango.Employee.Data;
 using Tango.Employee.Data.Repositories;
@@ -9,6 +14,27 @@ using Tango.Employee.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+//Add service for JWT authentication
+var key = Encoding.UTF8.GetBytes(builder.Configuration.GetValue<string>("JWTSecretKey"));
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateLifetime = true,
+        ClockSkew = TimeSpan.Zero,
+        ValidateAudience = false,
+        ValidateIssuer = false
+    };
+});
 
 builder.Services.AddControllers()
     //to support xml and json response
@@ -30,14 +56,30 @@ builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddOpenApi();
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+//To add Authorize in Swagger
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "JWT Authorization",
+        //type and scheme are required else won't show text box
+        Type = SecuritySchemeType.Http,
+        Scheme = JwtBearerDefaults.AuthenticationScheme,
+        In = ParameterLocation.Header,
+        Description = "Please paste the token in the text box"
+    });
+    options.AddSecurityRequirement((document) => new OpenApiSecurityRequirement
+    {
+        [new OpenApiSecuritySchemeReference("Bearer", document)] = []
+    });
+});
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
     app.UseSwagger();
     app.UseSwaggerUI();
 }

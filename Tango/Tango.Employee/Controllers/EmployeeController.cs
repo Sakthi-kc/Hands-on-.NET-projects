@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Net;
 using Tango.Employee.DTOs;
 using Tango.Employee.Services;
 
@@ -7,8 +9,11 @@ namespace Tango.Employee.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [ProducesResponseType(200)]
-    [ProducesResponseType(400)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(StatusCodes.Status403Forbidden)]
+    [Authorize]
     public class EmployeeController : ControllerBase
     {
         private readonly ILogger<EmployeeController> _logger;
@@ -81,6 +86,7 @@ namespace Tango.Employee.Controllers
 
         [HttpPost]
         [Route("Create")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<ActionResult<EmployeeDTO>> CreateEmployee([FromBody] CreateEmployeeDTO body)
         {
 
@@ -98,7 +104,7 @@ namespace Tango.Employee.Controllers
         //if any field not sent, it will be updated with default value as 0 or null
         [HttpPut]
         [Route("{id}")]
-        [ProducesResponseType(204)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> UpdateEmployee(int id, [FromBody] UpdateEmployeeDTO body)
         {
             await _service.UpdateRecordAsync(id, body);
