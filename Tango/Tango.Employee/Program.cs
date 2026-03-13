@@ -18,6 +18,9 @@ var builder = WebApplication.CreateBuilder(args);
 //Add service for JWT authentication
 var key = Encoding.UTF8.GetBytes(builder.Configuration.GetValue<string>("JWTSecretKey"));
 
+var aud = builder.Configuration.GetValue<string>("JWTAudience");
+var issuer = builder.Configuration.GetValue<string>("JWTIssuer");
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -31,8 +34,10 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(key),
         ValidateLifetime = true,
         ClockSkew = TimeSpan.Zero,
-        ValidateAudience = false,
-        ValidateIssuer = false
+        ValidateAudience = true,
+        ValidAudience = aud,
+        ValidateIssuer = true,
+        ValidIssuer = issuer,
     };
 });
 

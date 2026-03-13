@@ -31,6 +31,9 @@ namespace Tango.Employee.Controllers
 
             var key = Encoding.ASCII.GetBytes(_config.GetValue<string>("JWTSecretKey")!);
 
+            var issuer = _config.GetValue<string>("JWTIssuer");
+            var aud = _config.GetValue<string>("JWTAudience");
+
             var tokenHandler = new JwtSecurityTokenHandler();
             var tokenDescriptor = new SecurityTokenDescriptor(){
                 Subject = new ClaimsIdentity(new Claim[]
@@ -39,7 +42,9 @@ namespace Tango.Employee.Controllers
                     new Claim(ClaimTypes.Role, "Developer")
                 }),
                 Expires = DateTime.UtcNow.AddMinutes(1),
-                SigningCredentials = new(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
+                SigningCredentials = new(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256),
+                Issuer = issuer,
+                Audience = aud
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenGenerated = tokenHandler.WriteToken(token);
