@@ -65,6 +65,7 @@ builder.Services.AddEndpointsApiExplorer();
 //To add Authorize in Swagger
 builder.Services.AddSwaggerGen(options =>
 {
+    //adds authorize button to swagger page
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "JWT Authorization",
@@ -74,6 +75,8 @@ builder.Services.AddSwaggerGen(options =>
         In = ParameterLocation.Header,
         Description = "Please paste the token in the text box"
     });
+
+    //adds lock to all the APIs
     options.AddSecurityRequirement((document) => new OpenApiSecurityRequirement
     {
         [new OpenApiSecuritySchemeReference("Bearer", document)] = []
